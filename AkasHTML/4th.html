@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* here we use border for the paragraph of id=first*/
+        #first{
+            background-color: rgb(75, 61, 199);
+            height: 100px;
+            width: 455px;
+            border: 2px solid rgb(165, 24, 87);
+            /* to make border corner curve*/
+            border-radius: 10px;
+        }
+        /* we can separate the border for different side like we use in id=second*/
+        #second{
+            background-color: aqua;
+            height: 100px;
+            width: 455px;
+            border-top: 4px solid red;
+            border-bottom: 4px solid yellow;
+            border-left: 4px solid green;
+            border-right: 4px solid blue;
+            /* we can do separate corner curve differently*/
+            border-top-left-radius: 20px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 10px;
+
+        }
+        /*background image*/
+        #third{
+            height: 100px;
+            width: 500px;
+            /* here the image will repeat*/
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc3Gsxes2axQoP3pgjTf_eyO165zeISpv_94yEqFXoew&s');
+            border: 4px solid red;
+            /*if we want to repeat in x axis*/
+            background-repeat: repeat-x;
+            /*if we want to repeat in x axis*/
+            background-repeat: repeat-y;
+            /*if we want no repear*/
+            background-repeat: no-repeat;
+            /* to set position of image*/
+            background-position: center center;/*first for x-axis second for y-axis, we can use "center top" or "center bottom" or "top top" or "center right" or "top left" and so on, or we can use px to set the position*/
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quae officia repellat, eaque fugiat ipsa? Beatae rem sed id accusamus a suscipit nostrum quam officia ullam tenetur nobis velit, voluptatum ab? Quos, nihil ipsam!
+    </p>
+    <p id="second">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae aliquam provident quae soluta ex reprehenderit fugit deleniti ut, voluptatem eaque, tempora ullam officiis eligendi placeat dolorum necessitatibus dolorem sequi adipisci optio corporis. Pariatur, dolore.
+    </p>
+    <p id="third">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore quos placeat rerum incidunt ullam vero quas, rem eaque molestias quo esse pariatur recusandae eum doloribus, ipsum optio! Nemo officiis, reiciendis provident ea impedit molestias?
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-iamsky</title>
+    <!-- There are three types of CSS 1. inline(most prayority) 2. Internal 3.External-->
+    <!-- Here the given link of external css we just import the data here-->
+    <!--<link rel="stylesheet" href="2nd.css">-->
+    <!-- in internal CSS we use <style> tag and inside this tag we use <p> tag. and styling done inside the <p>(element selector) tag -->
+    <!-- we have internal CSS and external CSS, now which one is present later. Now if we want not to change particular color we can use !important before the ; -->
+    <!--<p> is used to color whole body -->
+    <!-- to color single paragraph we use id-selector -->
+    <style>
+        /* element selector*/
+        p{
+            border: 2px solid red;
+        }
+    /*id selector*/
+    #newColor{
+        color: yellowgreen;
+        background-color: orangered;
+    }
+    /*class selector*/
+    .textColor{
+        background-color: blueviolet;
+    }
+    /* group selecter*/
+    footer,span{
+        background-color: pink;
+    }
+
+    </style>
+</head>
+<body>
+    <h2>CHESS</h2>
+    <p>
+        Chess is a board game between two players. It is sometimes called international chess or Western chess to distinguish it from related games, such as xiangqi (Chinese chess) and shogi (Japanese chess). The current form of the game emerged in Spain and the rest of Southern Europe during the second half of the 15th century after evolving from chaturanga, a similar but much older game of Indian origin. Today, chess is one of the world's most popular games, played by millions of people worldwide.
+
+        <p class="backColor">Chess is an abstract strategy game and involves no hidden information. It is played on a chessboard with 64 squares arranged in an eight-by-eight grid. At the start, each player controls sixteen pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The player controlling the white pieces moves first, followed by the player controlling the black pieces. The object of the game is to checkmate the opponent's king, whereby the king is under immediate attack (in "check") and there is no way for it to escape. There are also several ways a game can end in a draw.</p>
+
+        <p class="textColor">Organized chess arose in the 19th century. Chess competition today is governed internationally by FIDE (International Chess Federation). The first universally recognized World Chess Champion, Wilhelm Steinitz, claimed his title in 1886; Magnus Carlsen is the current World Champion. A huge body of chess theory has developed since the game's inception. Aspects of art are found in chess composition, and chess in its turn influenced Western culture and art, and has connections with other fields such as mathematics, computer science, and psychology.</p>
+
+        <p id="newColor" class="backColor">One of the goals of early computer scientists was to create a chess-playing machine. In 1997, Deep Blue became the first computer to beat the reigning World Champion in a match when it defeated Garry Kasparov. Today's chess engines are significantly stronger than the best human players and have deeply influenced the development of chess theory.</p>
+    <span>
+        This is the span
+    </span>
+    <footer>
+        this is footer
+    </footer>
+    
+</body>
+</html>
